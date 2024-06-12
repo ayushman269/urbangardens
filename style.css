@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.title
+{
+    padding-left: 10px;
+    
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    
+}
+
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
+}
+
+.sentence {
+    margin-right: 50px; /* Space between sentences */
+    font-size: 15px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.nav
+{
+    display: flex;
+    height: 62px;
+    background-color:#ebebeb;
+    /* border-radius: 50px; */
+    padding: 0px 20px;
+    /* margin-top: 20px; */
+}
+
+.nav li
+{
+   list-style: none;
+    padding: 0px 13px;
+}
+
+.font
+{
+    font-family: "Fira Sans", sans-serif;
+}
+.font-col
+{
+    color: white;
+}
+.top-left
+{
+    max-width: 50%;
+    
+}
+.top-right
+{
+    max-width: 50%;
+    padding-left: 100px;
+    
+
+}
+
+.img{
+   max-width:380px;
+}
+.toolimg
+{
+    max-width: 150px;
+    padding: 30px 200px;
+}
+
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is hidden until it's typed */
+    border-right: .15em solid orange; /* Creates the cursor effect */
+    white-space: nowrap; /* Keeps the text on a single line */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .02em; /* Adds some space between letters */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.but2
+{
+   margin: 10px 0;
+   padding:4px 15px;
+   border: 2px solid #44575f;
+   color: white;
+   background-color: #4c6069;
+   border-radius: 6px;
+}
+
+.Products
+{
+    height: 380px;
+    
+}
+
+
+.prod-img
+{
+    
+    border-radius: 20%;
+    padding: 20px;
+}
+
+
+.but-3
+{
+    margin: 10px 0;
+    padding:4px 15px;
+    border: 2px solid #ffb738;
+    color: black;
+    background-color: #ffca3d;
+    border-radius: 6px;
+    max-width:  100px;
+}
+
+.btn
+{
+    max-width: 30%;
+    /* border: 1px solid black; */
+    padding: 30px 48px;
+}
+
+.our-imp
+{
+    width: 100%;
+    height:380px;
+    background-image:url('flowers.png') ;
+    background-size: cover   ;
+    background-position: center;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+
+}
+.feature-box
+{
+    margin-top: 60px;
+}
+.feature
+{
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.feature-section
+{
+    height: 200px;
+    color: white;
+  width: 20%;
+  text-align: center;
+  /* border: 2px solid ; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.image-container {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.image-container img {
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+.review-title
+{
+    margin: 20px 0px;
+}
+.customer-container {
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.customer-container:hover img {
+    transform: scale(1.1);
+}
+
+.rev-2
+{
+    justify-content: end;
+}
+.garden-img
+{
+    max-width: 20%;
+    border-radius: 10%;
+}
+.abt{
+    padding: 20px 30px;
+  background-color: #313c41;
+  color: white;
+}
+.aboutug
+{
+    margin-right: 220px;
+}
+.footer li{
+    list-style: none;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 25px;
+    
+}
+
+.footer li:hover
+{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out; 
+}
